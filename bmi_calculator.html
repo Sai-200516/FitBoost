@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bmi_calculator.css">
+    <link rel="icon" href="images/fitboost__1.png">
+    <title>Fit Boost</title>
+</head>
+<body>
+  <header>
+    <div id="google_translate_element"></div>
+    <script src="translate.js"></script>
+    <div class="heading-container">
+        <h1 class="heading">FITBOOST</h1>
+        <img src="images/fitboost.png" class="logo_1">
+    </div>
+    <div class="dropdown">
+      <a href="#"><button class="dropbtn">Home</button></a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Programs</button>
+        <div class="dropdown-content">
+          <a href="#">All Medicine</a>
+          <a href="#">Buy Again</a>
+          <a href="order.html">Order Online</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Workouts</button>
+        <div class="dropdown-content">
+          <a href="ayurvedic.html">Ayurvedic</a>
+          <a href="diabetic.html">Diabetes </a>
+          <a href="#">Weight Care</a>
+          <a href="#">Personal care</a>
+          <a href="glass.html">Eye Glasses</a>       
+          <a href="#">Lung Care</a>
+          <a href="#">Mental care</a>
+          <a href="baby_care.html">Baby care</a>
+          <a href="#">Health Food And Drinks</a>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Calculators</button>
+        <div class="dropdown-content">
+          <a href="hair_care.html">BMI Calculators</a>
+          <a href="beard_care.html">Beard Care</a>
+          <a href="body_care.html">Body Care</a>
+          <a href="face_personal_care.html">Face Personal Care</a>
+          <a href="masks.html">Masks</a>
+          <a href="face_or_skin.html">Face/Skin Tools</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Care</button>
+        <div class="dropdown-content">
+          <a href="#">Health Library</a>
+          <a href="#">PatientsAlike</a>
+          <a href="#">All About Cancers</a>
+          <a href="#">Corona Awaraness</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#"><button class="dropbtn">About</button></a>
+      </div>
+    <hr>
+    <hr>
+  </header>
+    <div class="container">
+      <div class="box">
+        <h1>BMI Calculator</h1>
+        <div class="content">
+
+
+          <div class="input">
+              <label for="height">Age</label>
+              <input type="text" class="text-input" id="age" autocomplete="off" required/>
+          </div>
+
+          <div class="gender">
+
+              <label class="container">
+                  <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                  <span class="checkmark"></span>
+                </label>
+
+
+              <label class="container">
+                  <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+          </div>
+
+          <div class="containerHW">
+          <div class="inputH">
+            <label for="height">Height(cm)</label>
+            <input type="number" id="height" required>
+          </div>
+
+          <div class="inputW">
+            <label for="weight">Weight(kg)</label>
+            <input type="number" id="weight" required>
+          </div>
+        </div>
+
+          <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+        </div>
+        <div class="result">
+          <p>Your BMI is</p>
+          <div id="result">00.00</div>
+          <p class="comment"></p>
+        </div>
+    <script src="bmi_calculator.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
