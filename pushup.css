@@ -61,7 +61,7 @@ body{
 .dropdown {
     position: relative;
     display: inline-block;
-    margin: 0px 54px;
+    margin: 0px 58px;
     
   }
   
@@ -97,71 +97,82 @@ body{
     background-color: #ff00ff;
     color: #f9f9f9;
   }
-  body{
+  body {
     font-family: Arial, Helvetica, sans-serif;
   }
-  .img-cont img{
-    width: 100%;
-    height: 100%;
-  }
-
-  .flip-box {
-    background-color: transparent;
-    width: 400px;
-    height: 300px;
-    border: 1px solid black;
-    perspective: 1000px;
-  }
   
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    padding-bottom: 0px;
-  }
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; 
-    backface-visibility: hidden;
-  }
-  .flip-box-front {
-    background-color: black;
-    color: black;
-    flex: 33.33%;
-    padding: 0px;
-  }
-  .flip-box-back {
-    background-color: transparent;
-    color: white;
-    transform: rotateY(180deg);
-  }
-  .first {
-    float: left;
-    background: transparent;
-    width: 33.3%;
-    height: 100%;
-    
-}
-.middle {
-    float: left;
-    background: transparent;
-    width: 33.3%;
-    height: 200px;
-}
-.last {
-    float: right;
-    background: transparent;
-    width: 33.3%;
-    height: 200px;
-}
+}.search-container{
+    display: flex;
+    }
+    .search-icon{
+        height: 20px;
+        width: 20px;
+        align-items: center;
+    }
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin: 20px auto;
+            width: 500px;
+        }
+        
+        #search-bar {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            flex: 1;
+        }
+        
+        #search-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: white;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        #search-results {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        
+        #search-results li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
 
-  
- 
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+        }
+        
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .product-name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        .product-price {
+            margin-top: 5px;
+            color: #4CAF50;
+        }
+        

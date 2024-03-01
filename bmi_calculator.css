@@ -24,7 +24,7 @@
 body{
     background-color: #000;
     color: white;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 .heading{
     text-align: center;
@@ -97,10 +97,6 @@ body{
     background-color: #ff00ff;
     color: #f9f9f9;
   }
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
  /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
@@ -120,7 +116,11 @@ width: 500px;
 background: #fafafa;
 border-radius: 20px;
 text-align: center;
-box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+box-shadow: 2px 2px 20px 5px #43ff21;
+position: absolute;
+  top: 40%;
+  left: 30%;
+
 }
 h1 {
 color: rgb(0, 0, 0, 0.7);
@@ -139,8 +139,6 @@ padding: 30px 0;
     padding: 20px 0;
     margin-bottom: 20px;
 }
-
-
 .input label {
     display: block;
     font-size: 18px;
@@ -157,8 +155,6 @@ padding: 30px 0;
     font-size: 28px;
     font-family: "Nunito", sans-serif;
 }
-
-
 .inputW {
     background: #fff;
     box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
@@ -182,17 +178,18 @@ padding: 30px 0;
     font-size: 28px;
     font-family: "Nunito", sans-serif;
 }
-
+.container{
+    display: flex;
+    color: #000;
+}
 .inputH {
-    background: #fffs;
+    background: #ffff;
     box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     padding: 10px 0;
     margin-bottom: 20px;
     margin-right: 20px;
 }
-
-
 .inputH label {
     display: block;
     font-size: 18px;
@@ -209,8 +206,6 @@ padding: 30px 0;
     font-size: 28px;
     font-family: "Nunito", sans-serif;
 }
-
-
 button.calculate {
 cursor: pointer;
 font-family: "Nunito", sans-serif;
@@ -227,9 +222,6 @@ transition: all 0.5s;
 button.calculate:hover {
 background: #0044ff;
 }
-
-
-
 .result {
 padding: 10px 20px;
 }
@@ -364,11 +356,6 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 }
-
-
-
-
-
 /* The Modal (background) */
 .modal {
 display: none; /* Hidden by default */
@@ -426,40 +413,6 @@ transition: all 0.3s;
 .close:hover {
 color: #d41111; 
 }
-
-
-
-
-
-.linkDownload {
-position: fixed;
-background-color: #d12322;
-margin: 20px;
-padding: 10px 10px;
-left: -0px;
-border-radius: 5px;
-bottom: -0px;
-font-size: 16px;
-font-weight: 400;
-color: #fff;
-text-decoration: none;
-text-transform: capitalize;
-transition: all 0.43s ease-in-out;
-
-
-}
-
-
-.linkDownload i {
-padding-left: 7px;
-}
-
-.linkDownload:hover {
-text-decoration: none;
-background-color: black;
-}
-
-
 @media (max-width: 700px){
 
 

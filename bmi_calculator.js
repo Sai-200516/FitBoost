@@ -42,7 +42,7 @@ function countBmi(){
     result = 'Healthy';
      }else if(25<=bmi&&bmi<=29.9){
     result = 'Overweight';
-     }else if(30<=bmi&&bmi<=34.9){
+     }else if(30<=bmi&&bmi<=34.9){p
     result = 'Obese';
      }else if(35<=bmi){
     result = 'Extremely obese';
