@@ -6,6 +6,7 @@ Fitness Website
 
 
 created by 
-Shalini kuna
-Appikonda Sai
-M yaswanth Kumar
+Shalini kuna,
+Appikonda Sai,
+M yaswanth Kumar,
+Chandu Ganesh
